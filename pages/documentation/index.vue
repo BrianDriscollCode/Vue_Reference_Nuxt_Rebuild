@@ -1,13 +1,48 @@
 <template>
-  <section>
-    <div>
-      <h1> Documentation Template </h1>
+  <section class="contentWrapper">
+    <div class="mainContent">
+
+      <div class="mainContentContainer">
+        <h1> Documentation Template </h1>
+
+      <p> This is some example content. </p>
+        <!-- eslint-disable -->
+        <CodeBlock>
+export default {
+  name: 'exampleName',
+  components: {
+    ComponentName
+  },
+  data() {
+    return {
+      variableName: 'stringValue'
+    }
+  }
+}
+        </CodeBlock>
+        <!-- eslint-enable -->
+
+        <p> This is some example content. </p>
+
+        <p> This is some example content. </p>
+        <p> This is some example content. </p>
+        <p> This is some example content. </p>
+        <p> This is some example content. </p>
+        <p> This is some example content. </p>
+        <p> This is some example content. </p>
+        <p> This is some example content. </p>
+        <p> This is some example content. </p>
+        <p> This is some example content. </p>
+        <p> This is some example content. </p>
+        <p> This is some example content. </p>
+        <p> This is some example content. </p>
+        <p> This is some example content. </p>
+      </div>
     </div>
 
-    <div>
+    <div class="articleNavigation">
       <ArticleNavigation
-        :subjectTitle="contentHeaders"
-        :newHeaders="newHeaders"
+        :new-headers="newHeaders"
       />
     </div>
   </section>
@@ -15,21 +50,23 @@
 
 <script>
 import ArticleNavigation from '../../components/articleNavigation.vue'
+import CodeBlock from '../../components/codeBlock.vue'
 
 export default {
   name: 'DocumentationIndex',
   components: {
-    ArticleNavigation
+    ArticleNavigation,
+    CodeBlock
   },
   layout: 'documentation',
   data() {
     return {
-      contentHeaders: [
-        { title: 'one' },
-        { title: 'two' }
-      ],
       newHeaders: ['three', 'four']
     }
   }
 }
 </script>
+
+<style scoped>
+@import './documentationGlobalStyles.css';
+</style>

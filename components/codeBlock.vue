@@ -18,6 +18,7 @@ export default {
 
 <style scoped>
 .codeBlock {
+  margin: 0 auto 0 auto;
   border-radius: 5px;
   width: 100%;
 }

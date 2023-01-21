@@ -8,3 +8,7 @@ export default {
   layout: 'documentation'
 }
 </script>
+
+<style scoped>
+@import './documentationGlobalStyles.css';
+</style>
