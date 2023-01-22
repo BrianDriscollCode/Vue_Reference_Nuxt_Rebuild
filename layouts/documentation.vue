@@ -1,15 +1,12 @@
 <template>
   <div class="documentationContainer">
     <section class="leftSideBar">
-      Left Side Bar
+      <LeftSideBar />
     </section>
 
     <section class="documentationView">
-      <div class="topBar">
-        Top Bar
-      </div>
-
       <div class="content">
+        <!-- <TopBar /> -->
         <Nuxt />
       </div>
     </section>
@@ -17,42 +14,45 @@
 </template>
 
 <script>
+import LeftSideBar from '../components/leftSideBar.vue'
+// import TopBar from '../components/topBar/topBar.vue'
 
 export default {
-  name: 'DocumentationLayout'
+  name: 'DocumentationLayout',
+  components: {
+    LeftSideBar
+    // TopBar
+  }
 }
 </script>
 
 <style scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,700&display=swap');
+
 .documentationContainer {
   display: flex;
   width: 100%;
   height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(255, 255, 255);
 }
 
 /* Navigation */
 
 .leftSideBar {
-  background-color: blue;
-  width: 15%;
+  background-color: rgb(248, 248, 255);
+  width: 18%;
 }
 
 .documentationView {
-  width: 85%;
+  width: 82%;
   height: 100vh;
 }
 
 /* Content */
 
-.topBar {
-  background-color: green;
-  position: fixed;
-  width: 100%;
-  height: 50px;
-}
-
 .content {
-  background-color: lightcoral;
   height: 100vh;
 }
 

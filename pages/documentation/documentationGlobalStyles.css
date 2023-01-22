@@ -1,11 +1,16 @@
 h1 {
-    margin-top: 0px !important;
-    padding-top: 6em;
+    padding-top: 100px !important;
+    margin-top: 0;
+    font-size: 1.7em;
+}
+
+p {
+    line-height: 1.5em;
 }
 
 .contentWrapper {
     margin: 0 auto 0 auto;
-    width: 95%;
+    width: 100%;
     /* background-color: aquamarine; */
     display: flex;
     flex-direction: row;
@@ -17,18 +22,38 @@ h1 {
 }
 
 .mainContent {
-    width: 85%;
+    width: 100%;
+    overflow: auto;
+    height: 100vh;
 }
 
 .mainContentContainer {
-    width: 85%;
+    width: 65%;
     height: 100vh;
-    overflow: auto;
-    padding: 0 2em 0 5em;
+    margin: 0 auto 0 auto;
 }
 
-.articleNavigation {
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+/* Article Navigation */
+
+.articleNavigationContainer {
     /* background-color: chartreuse; */
-    padding-top: 6em;
-    width: 15%;
+    width: 25%;
 }

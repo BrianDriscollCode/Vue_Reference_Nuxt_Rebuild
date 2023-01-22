@@ -20,11 +20,12 @@ export default {
 .codeBlock {
   margin: 0 auto 0 auto;
   border-radius: 5px;
-  width: 100%;
+  width: 100%
 }
 
 .javascript {
-    padding: 0 0 0 1em;
+    padding: 0 0 0 2em;
     border-radius: 15px;
+    font-size: 15px;
 }
 </style>

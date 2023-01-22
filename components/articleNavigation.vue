@@ -8,7 +8,7 @@
       </li>
     </div>
 
-    <p> {{ newHeaders }} </p>
+    <!-- <p> {{ newHeaders }} </p> -->
   </section>
 </template>
 
@@ -33,15 +33,24 @@ export default {
 </script>
 
 <style scoped>
+h4 {
+  padding-top: 105px !important;
+  margin-top: 0;
+}
+
+li {
+  line-height: 1.5em;
+}
 
 .articleNavigationWrapper {
+  height: 100vh;
   position: fixed;
+  padding-left: 1.5em;
 }
 
 .navigationLinkWrapper {
   display: flex;
   flex-direction: column;
-  background-color: red;
 }
 
 .listElement {

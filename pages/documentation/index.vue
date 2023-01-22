@@ -1,11 +1,17 @@
 <template>
   <section class="contentWrapper">
     <div class="mainContent">
-
+      <TopBar />
       <div class="mainContentContainer">
         <h1> Documentation Template </h1>
 
-      <p> This is some example content. </p>
+        <p>
+          In Vue, emitted events are a way for a child component to
+          communicate with its parent component. The child component
+          emits an event, which the parent component can listen for
+          and respond to. This allows for a unidirectional flow of
+          data between the parent and child components.
+        </p>
         <!-- eslint-disable -->
         <CodeBlock>
 export default {
@@ -22,7 +28,13 @@ export default {
         </CodeBlock>
         <!-- eslint-enable -->
 
-        <p> This is some example content. </p>
+        <p>
+          In Vue, emitted events are a way for a child component to
+          communicate with its parent component. The child component
+          emits an event, which the parent component can listen for
+          and respond to. This allows for a unidirectional flow of
+          data between the parent and child components.
+        </p>
 
         <p> This is some example content. </p>
         <p> This is some example content. </p>
@@ -40,7 +52,7 @@ export default {
       </div>
     </div>
 
-    <div class="articleNavigation">
+    <div class="articleNavigationContainer">
       <ArticleNavigation
         :new-headers="newHeaders"
       />
@@ -49,6 +61,7 @@ export default {
 </template>
 
 <script>
+import TopBar from '../../components/topBar/topBar.vue'
 import ArticleNavigation from '../../components/articleNavigation.vue'
 import CodeBlock from '../../components/codeBlock.vue'
 
@@ -56,12 +69,14 @@ export default {
   name: 'DocumentationIndex',
   components: {
     ArticleNavigation,
-    CodeBlock
+    CodeBlock,
+    TopBar
   },
   layout: 'documentation',
   data() {
     return {
-      newHeaders: ['three', 'four']
+      newHeaders: ['Introduction', 'How Does Vue Work?',
+        'Installing Vue Using NPM']
     }
   }
 }
