@@ -1,8 +1,8 @@
 <template>
   <div class="documentationContainer">
-    <section class="leftSideBar">
+    <aside class="leftSideBar">
       <LeftSideBar />
-    </section>
+    </aside>
 
     <section class="documentationView">
       <div class="content">

@@ -1,8 +1,9 @@
 <template>
   <section class="contentWrapper">
     <div class="mainContent">
+      <TopBar />
       <div class="mainContentContainer">
-        <h1> Introduction </h1>
+        <h1> Provide and Inject </h1>
 
         <p>
           In Vue, emitted events are a way for a child component to
@@ -60,14 +61,16 @@ export default {
 </template>
 
 <script>
-import ArticleNavigation from '../../components/articleNavigation.vue'
-import CodeBlock from '../../components/codeBlock.vue'
+import TopBar from '../../../components/topBar/topBar.vue'
+import ArticleNavigation from '../../../components/articleNavigation.vue'
+import CodeBlock from '../../../components/codeBlock.vue'
 
 export default {
-  name: 'DocumentationIntroduction',
+  name: 'ProvideAndInjectDocumentation',
   components: {
     ArticleNavigation,
-    CodeBlock
+    CodeBlock,
+    TopBar
   },
   layout: 'documentation',
   data() {
@@ -80,5 +83,5 @@ export default {
 </script>
 
 <style scoped>
-@import './documentationGlobalStyles.css';
+@import '../documentationGlobalStyles.css';
 </style>

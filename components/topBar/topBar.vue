@@ -4,13 +4,18 @@
       <div class="topBar">
         <div class="searchContainer">
           <label class="searchLabel"> Search: </label>
-          <input value="  in development" />
+          <input value="  in development">
         </div>
 
         <div class="top_navigation">
           <span class="navLinkContainer">
             <Nuxt-link to="/" class="navLink">
               Home
+            </Nuxt-link>
+          </span>
+          <span class="navLinkContainer">
+            <Nuxt-link to="/blog" class="navLink">
+              <del> Blog </del>
             </Nuxt-link>
           </span>
           <span class="navLinkContainer">
@@ -27,8 +32,7 @@
       </div>
     </div>
 
-    <div class="rightSection">
-    </div>
+    <div class="rightSection" />
   </section>
 </template>
 

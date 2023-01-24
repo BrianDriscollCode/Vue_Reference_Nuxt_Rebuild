@@ -25,9 +25,6 @@ export default {
     return {
       title: ''
     }
-  },
-  mounted() {
-    console.log(this.subjectTitle, this.headers)
   }
 }
 </script>
@@ -59,5 +56,11 @@ li {
 
 .navigationLink {
   list-style: none;
+  text-decoration: none;
+  color:#34445c;
+}
+
+.navigationLink:hover {
+  color: #4c6182;
 }
 </style>
