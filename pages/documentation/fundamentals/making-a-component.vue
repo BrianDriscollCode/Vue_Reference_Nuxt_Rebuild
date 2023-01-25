@@ -3,7 +3,9 @@
     <div class="mainContent">
       <TopBar />
       <div class="mainContentContainer">
-        <h1> Making a Component </h1>
+        <h1 id="MakingaComponent">
+          Making a Component
+        </h1>
         <p>
           There are <u> three parts </u> of a Vue Component/Page:
         </p>
@@ -60,7 +62,9 @@
         </pre>
         <!-- eslint-enable -->
 
-        <h2> A Quick Review of Template </h2>
+        <h2 id="AQuickReviewofTemplate">
+          A Quick Review of Template
+        </h2>
 
         <p>
           To add variables to your HTML, you can use text
@@ -129,7 +133,9 @@
         </pre>
         <!-- eslint-enable -->
 
-        <h2> The Script Area </h2>
+        <h2 id="TheScriptArea">
+          The Script Area
+        </h2>
         <p> There are many important functions of the script area. To name a few: </p>
 
         <ol>
@@ -191,7 +197,9 @@
         </pre>
         <!-- eslint-enable -->
 
-        <h2> The Style Area </h2>
+        <h2 id="TheStyleArea">
+          The Style Area
+        </h2>
         <p>
           To target specific elements in your template you can add
           classes or even call the elements themselves. In both cases,

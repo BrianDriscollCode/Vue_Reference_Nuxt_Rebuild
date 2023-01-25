@@ -33,6 +33,11 @@ p {
     margin: 0 auto 0 auto;
 }
 
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
   }

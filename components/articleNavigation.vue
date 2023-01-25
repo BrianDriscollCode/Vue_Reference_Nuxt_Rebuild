@@ -4,7 +4,7 @@
 
     <div class="navigationLinkWrapper">
       <li v-for="title in newHeaders" :key="title" href="#" class="listElement">
-        <a href="#" class="navigationLink"> {{ title }} </a>
+        <a :href="convertText(title)" class="navigationLink"> {{ title }} </a>
       </li>
     </div>
 
@@ -24,6 +24,13 @@ export default {
   data() {
     return {
       title: ''
+    }
+  },
+  methods: {
+    convertText(htmlId) {
+      const newId = htmlId.trim().replace(/\s/g, '')
+      console.log(newId)
+      return '#' + newId
     }
   }
 }

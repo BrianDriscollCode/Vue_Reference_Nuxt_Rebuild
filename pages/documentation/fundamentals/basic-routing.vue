@@ -3,7 +3,9 @@
     <div class="mainContent">
       <TopBar />
       <div class="mainContentContainer">
-        <h1> Basic Routing </h1>
+        <h1 id="BasicRouting">
+          Basic Routing
+        </h1>
         <p>
           Vue has an
           <a href="https://router.vuejs.org/">
@@ -37,7 +39,9 @@ npm install vue-router@4
           non-bundled websites.
         </p>
 
-        <h2> Step 1: Create the Router </h2>
+        <h2 id="CreatetheRouter">
+          Create the Router
+        </h2>
         <p>
           This is a two part process. To create the router we need to have
           routes established because the router will accept this part of an
@@ -89,7 +93,9 @@ const router = createRouter({
           </CodeBlock>
         </pre>
         <!-- eslint-enable -->
-        <h2> Step 2: Instantiate the Router in Your App </h2>
+        <h2 id="InstantiatetheRouterinYourApp">
+          Step 2: Instantiate the Router in Your App
+        </h2>
 
         <p>
           Now that we have our route and router declared, we can instantiate it
@@ -114,7 +120,9 @@ createApp(App).use(router).mount(’#app’);
           Now we are ready to use the router!
         </p>
 
-        <h2> Declare Routes in a Component &lt;RouterView&gt; </h2>
+        <h2 id="DeclareRoutes">
+          Declare Routes in a Component &lt;RouterView&gt;
+        </h2>
         <p>
           In the parent component of your application we need to show where to
           inject the components (App.vue):
@@ -143,8 +151,12 @@ createApp(App).use(router).mount(’#app’);
           of simple routing, what else can we do?
         </p>
 
-        <h2> Nesting Components </h2>
-        <h3> 1. Send Data to the Page/Component With a Route </h3>
+        <h2 id="NestingComponents">
+          Nesting Components
+        </h2>
+        <h3 id="1.SendDatatothePage/ComponentWithaRoute">
+          1. Send Data to the Page/Component With a Route
+        </h3>
 
         <p> In this case, we need to change the routes: </p>
 
@@ -185,7 +197,9 @@ data() {
           prop or function syntax, you pass a string via the URL slug.
         </p>
 
-        <h3>2. We can include a second component in the route: </h3>
+        <h3 id="2.Wecanincludeasecondcomponentintheroute:">
+          2. We can include a second component in the route:
+        </h3>
         <span> Route.js: </span>
         <!-- eslint-disable -->
         <pre>
@@ -286,7 +300,9 @@ data() {
           but for a larger project one may want to manage routing ALL in one place.
         </p>
 
-        <h3> 3. Creating Children Components Using Routes (STILL IN PROGRESS) </h3>
+        <h3 id="3.CreatingChildrenComponentsUsingRoutes">
+          3. Creating Children Components Using Routes
+        </h3>
         <p> Vue Router also gives us tools to render children without parent components. </p>
 
         <!-- eslint-disable -->

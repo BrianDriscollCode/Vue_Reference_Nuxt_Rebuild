@@ -3,7 +3,9 @@
     <div class="mainContent">
       <TopBar />
       <div class="mainContentContainer">
-        <h1> Getting Started </h1>
+        <h1 id="GettingStarted">
+          Getting Started
+        </h1>
 
         <p>
           You can utilize basic html and JavaScript or Webpack/Vite to
@@ -11,7 +13,9 @@
           Vue CLI, and webpack to spin up the Vue framework.
         </p>
 
-        <h2> What is Vue? </h2>
+        <h2 id="WhatisVue?">
+          What is Vue?
+        </h2>
 
         <p>
           Vue is a JavaScript framework used for creating user interfaces.
@@ -20,7 +24,9 @@
           intuitive way to structure an application.
         </p>
 
-        <h2> Downloading Vue </h2>
+        <h2 id="DownloadingVue">
+          Downloading Vue
+        </h2>
 
         <p> To continue, you will need: </p>
         <ul>
@@ -71,7 +77,7 @@ npm run serve
         </pre>
         <!-- eslint-disable -->
 
-        <h2> Resources for Learning </h2>
+        <h2 id="ResourcesforLearning"> Resources for Learning </h2>
         <p> There are many resources to learn Vue from due to its large community! </p>
         <ul>
           <li>
@@ -91,7 +97,7 @@ npm run serve
           </li>
         </ul>
 
-        <h2> Common Front-End Features </h2>
+        <h2 id="CommonFront-endFeatures"> Common Front-End Features </h2>
 
         <p>
           Why should you use Vue!? Vue is another Frontend Framework like
@@ -141,7 +147,9 @@ export default {
           </CodeBlock>
         </pre>
         <!-- eslint-enable -->
-        <h2> Quick Look at a Vue App's Structure </h2>
+        <h2 id="QuickLookataVueAppStructure">
+          Quick Look at a Vue App's Structure
+        </h2>
         <img src="~/assets/VueNavigationExample.jpg">
 
         <p> The highlighted components represent three important parts of a Vue Application: </p>
@@ -151,7 +159,9 @@ export default {
           <li> Components </li>
         </ul>
 
-        <h3> File: main.js </h3>
+        <h3 id="File:main.js">
+          File: main.js
+        </h3>
 
         <p> This file initiates the application with "createApp" from Vue. </p>
 
@@ -186,7 +196,9 @@ createApp(App).use(store).use(router).use(highlightJS).mount('#app')
         </pre>
         <!-- eslint-enable -->
 
-        <h3> File: App.vue </h3>
+        <h3 id="File:App.vue">
+          File: App.vue
+        </h3>
         <p>
           Here is the first parent in your application tree. From components,
           to complicated siloed structures, or even just a basic web page can
@@ -234,7 +246,7 @@ body {
         </pre>
         <!-- eslint-disable -->
 
-        <h3> File: Components </h3>
+        <h3 id="File:Components"> File: Components </h3>
 
         <p>
           Just like how the App.vue file contains a template, script,

@@ -3,7 +3,9 @@
     <div class="mainContent">
       <TopBar />
       <div class="mainContentContainer">
-        <h1> Introduction </h1>
+        <h1 id="Introduction">
+          Introduction
+        </h1>
         <p>
           This website a documentation of a single web developer's
           reading, implementation, and knowledge of Vue. These are not
@@ -17,7 +19,9 @@
           can understand it.
         </p>
 
-        <h2> The Focus </h2>
+        <h2 id="TheFocus">
+          The Focus
+        </h2>
         <p>
           This website will look at Vue from the perspective of using
           WebPack, Vue CLI, and NPM. All the necessary tools to get
