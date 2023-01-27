@@ -143,8 +143,7 @@ export default {
   layout: 'documentation',
   data() {
     return {
-      newHeaders: ['Introduction', 'How Does Vue Work?',
-        'Installing Vue Using NPM']
+      newHeaders: ['Provide and Inject']
     }
   }
 }
